@@ -31,14 +31,14 @@ The process of refactoring is:
 - Passing the test
 - Changing the internals of the code _without breaking the test_
   - No _new_ features are added
-  - Code might run faster, but more importantly it's easier to reason about
+  - Code might run faster, but more importantly, it's easier to reason about
 
-Learning to build tests that can be run quickly to verify function of your code
-is a career-long study for developers. For the purposes of this lesson, you'll
-inherit reasonably good tests for testing the application. You'll **also** be
-given a _working_ solution (nice for a change!). Through a series of code
-reviews you'll edit the code internals to be cleaner, simpler, and easier to
-read. In fact, you'll learn how to cut away _nearly half the code_ and still
+Learning to build tests that can be run quickly to verify the function of your
+code is a career-long study for developers. For the purposes of this lesson,
+you'll inherit reasonably good tests for testing the application. You'll
+**also** be given a _working_ solution (nice for a change!). Through a series of
+code reviews, you'll edit the code internals to be cleaner, simpler, and easier
+to read. In fact, you'll learn how to cut away _nearly half the code_ and still
 have it work!
 
 ### Modify Expressions and Statements While Maintaining Functionality
@@ -122,7 +122,7 @@ _quickly_.
 
 In their feedback, The Master is suggesting here that this code is not "working
 clean." It passes the spec, sure, but it _hides_ some of what it's doing with
-confusing / non-essential extra code (or, "noise"). The Master is asking us to
+confusing/non-essential extra code (or, "noise"). The Master is asking us to
 remember to be Mindful as we code.
 
 We should trim it down. This uses a few known refactorings:
@@ -130,7 +130,7 @@ We should trim it down. This uses a few known refactorings:
 - Remove Temporary Variable
 - Remove Unused Code
 
-At the end, our implementation looks like:
+In the end, our implementation looks like:
 
 ```ruby
   def least_trials_slice
@@ -213,7 +213,7 @@ like <a href="https://curriculum-content.s3.amazonaws.com/pfwtfp/pfwtp-refactori
 href="https://curriculum-content.s3.amazonaws.com/pfwtfp/pfwtp-refactoring-with-the-master-lab/7-annotated.pdf" target="_blank">Seventh Sample Annotated</a>
 
 Human beings developed a sense for symmetry and balance so that we could judge
-health of other humans. This powerful sense can also help us keep code
+the health of other humans. This powerful sense can also help us keep code
 beautiful. This encounter suggests that if you do something in one way for
 _yin_, you should do the same thing, but slightly reversed for _yang_.
 
@@ -221,7 +221,7 @@ _yin_, you should do the same thing, but slightly reversed for _yang_.
 
 This strengthens a software design concept called
 ["The Principle of Least Surprise."][pols] If I say "right" you expect there to
-be a "left." If I say there's a "bottom," then somewhere there ought be a
+be a "left." If I say there's a "bottom," then somewhere there ought to be a
 "top." But how weird, or _surprising_ would it be if "left" and "right"
 returned slightly different things. The Master wants us to avoid creating
 surprises like this.
@@ -250,8 +250,8 @@ have understood the Master's teachings.
 ## Conclusion
 
 Refactoring is the process of making code correct and easy to maintain. For
-many this would be the definition of "good code." With additional study you can
-learn the refactorings that Fowler and others have researched. These are
+many, this would be the definition of "good code." With additional study, you
+can learn the refactorings that Fowler and others have researched. These are
 tested solutions for untangling complex code.
 
 ## Resources
